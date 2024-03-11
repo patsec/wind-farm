@@ -1,0 +1,12 @@
+tasks:
+- command: |
+    docker-compose up -d
+
+ports:
+- port: 1880
+  name: HMI
+  description: Turbine HMI (at /ui path)
+
+vscode:
+  extensions:
+  - ms-azuretools.vscode-docker
