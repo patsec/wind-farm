@@ -8,6 +8,66 @@
         "env": []
     },
     {
+        "id": "6c7ae6ea8dbc2394",
+        "type": "group",
+        "z": "1e4d1406de16ee4d",
+        "style": {
+            "stroke": "#333333",
+            "stroke-opacity": "1",
+            "fill": "#181818",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "8c6809145522f393",
+            "3083963ca29d2423",
+            "4b6c58ec8b71dd47",
+            "219c1fb151be6282",
+            "6f956ba5020089af",
+            "0c35f29e260f2005",
+            "7abcc3377d702d30",
+            "d38ca85b5f45d93f",
+            "3d79bca41210cbbd",
+            "c992d704ba81a2c8",
+            "c5c869eb8bccde88",
+            "7a13805371e69de5",
+            "b15e8a9e07a3075b",
+            "e070c38954242d37",
+            "78b4396ff5b67210",
+            "cffd4e9e525cbff7",
+            "baadd5aa5c5ac46c",
+            "d2d6bea322e64847",
+            "e0890438c866a057",
+            "8e786216ee0c58a3",
+            "ee65979c52f15882",
+            "189251698ec579b8",
+            "dc4c8ef6766e7d33",
+            "aa5ef85187fef0f7",
+            "1970534a2eac1f4a",
+            "0c0da14e0271b883",
+            "eb4a1fef2e6335dc",
+            "65747b326da3f1ad",
+            "20bcb6dfd88401ed",
+            "5b2918354ff83a76",
+            "4b85c0e005805e96",
+            "4bc0d216a340aa99",
+            "2fdd8c2af66042ae",
+            "e6d19971bcbd25c6",
+            "3a04c5be718d67d4",
+            "2e314e3006671f5e",
+            "3f3c1228a168b295",
+            "27ad65d6c79c45cc",
+            "78369ca698f9a3a8",
+            "46a86401caf5cc37"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 1672,
+        "h": 722
+    },
+    {
         "id": "a6dbb44b8889dd75",
         "type": "ui_group",
         "name": "Main",
@@ -31,7 +91,7 @@
         "id": "04085362d4f47b65",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -43,7 +103,8 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
@@ -53,44 +114,44 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
+                    "default": "#097479",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -145,46 +206,6 @@
         "className": ""
     },
     {
-        "id": "418caa73fb8a7b77",
-        "type": "ui_spacer",
-        "z": "26c59c063a382038",
-        "name": "spacer",
-        "group": "dedfe75ed71925fe",
-        "order": 8,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "1df7fd63457adb9b",
-        "type": "ui_spacer",
-        "z": "26c59c063a382038",
-        "name": "spacer",
-        "group": "dedfe75ed71925fe",
-        "order": 9,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "11555b9996c2e6d6",
-        "type": "ui_spacer",
-        "z": "26c59c063a382038",
-        "name": "spacer",
-        "group": "dedfe75ed71925fe",
-        "order": 10,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "12526c0400449242",
-        "type": "ui_spacer",
-        "z": "26c59c063a382038",
-        "name": "spacer",
-        "group": "dedfe75ed71925fe",
-        "order": 12,
-        "width": 5,
-        "height": 1
-    },
-    {
         "id": "c1016e4ae2592c37",
         "type": "ui_tab",
         "name": "WTG-2",
@@ -207,7 +228,7 @@
     {
         "id": "c1639316b9ac3b7a",
         "type": "ui_spacer",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "spacer",
         "group": "e6486a846f78c532",
         "order": 8,
@@ -217,7 +238,7 @@
     {
         "id": "4c059af5ad394d70",
         "type": "ui_spacer",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "spacer",
         "group": "e6486a846f78c532",
         "order": 9,
@@ -227,7 +248,7 @@
     {
         "id": "7100b77be7163c0e",
         "type": "ui_spacer",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "spacer",
         "group": "e6486a846f78c532",
         "order": 10,
@@ -237,7 +258,7 @@
     {
         "id": "8a477dd11c6c2f24",
         "type": "ui_spacer",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "spacer",
         "group": "e6486a846f78c532",
         "order": 12,
@@ -285,13 +306,44 @@
         "height": 1
     },
     {
+        "id": "637fa94d524c6a53",
+        "type": "ui_spacer",
+        "z": "1e4d1406de16ee4d",
+        "name": "spacer",
+        "group": "dedfe75ed71925fe",
+        "order": 11,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "8bc5b6f71c982609",
+        "type": "ui_spacer",
+        "z": "1e4d1406de16ee4d",
+        "name": "spacer",
+        "group": "dedfe75ed71925fe",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3b37339bde8ba984",
+        "type": "ui_spacer",
+        "z": "1e4d1406de16ee4d",
+        "name": "spacer",
+        "group": "dedfe75ed71925fe",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
         "id": "8c6809145522f393",
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-dnp3-master.connected",
         "updates": false,
-        "x": 190,
-        "y": 760,
+        "x": 160,
+        "y": 540,
         "wires": [
             [
                 "3083963ca29d2423",
@@ -303,6 +355,7 @@
         "id": "3083963ca29d2423",
         "type": "debug",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "debug-wtg-1",
         "active": false,
         "tosidebar": true,
@@ -312,14 +365,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
-        "y": 760,
+        "x": 430,
+        "y": 540,
         "wires": []
     },
     {
         "id": "4b6c58ec8b71dd47",
         "type": "ui_button",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "WTG-1 Button",
         "group": "a6dbb44b8889dd75",
         "order": 6,
@@ -336,8 +390,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 460,
-        "y": 840,
+        "x": 340,
+        "y": 620,
         "wires": [
             [
                 "6f956ba5020089af"
@@ -348,6 +402,7 @@
         "id": "219c1fb151be6282",
         "type": "function",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "button-color",
         "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-1 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-1 Down\"\n    return msg;}\n",
         "outputs": 1,
@@ -356,8 +411,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
-        "y": 840,
+        "x": 150,
+        "y": 620,
         "wires": [
             [
                 "4b6c58ec8b71dd47"
@@ -368,6 +423,7 @@
         "id": "6f956ba5020089af",
         "type": "change",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "WTG-1",
         "rules": [
             {
@@ -383,8 +439,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 840,
+        "x": 520,
+        "y": 620,
         "wires": [
             [
                 "0c35f29e260f2005"
@@ -395,10 +451,11 @@
         "id": "0c35f29e260f2005",
         "type": "ui_ui_control",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "WTG-1 tab",
         "events": "all",
-        "x": 810,
-        "y": 840,
+        "x": 690,
+        "y": 620,
         "wires": [
             []
         ]
@@ -526,9 +583,10 @@
         "id": "7abcc3377d702d30",
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-total-farm.mw-output",
         "updates": false,
-        "x": 170,
+        "x": 830,
         "y": 60,
         "wires": [
             [
@@ -541,6 +599,7 @@
         "id": "d38ca85b5f45d93f",
         "type": "debug",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "debug-total",
         "active": false,
         "tosidebar": true,
@@ -550,7 +609,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
+        "x": 1150,
         "y": 60,
         "wires": []
     },
@@ -558,6 +617,7 @@
         "id": "3d79bca41210cbbd",
         "type": "ui_chart",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "a6dbb44b8889dd75",
         "order": 1,
@@ -592,7 +652,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 540,
+        "x": 1200,
         "y": 120,
         "wires": [
             []
@@ -1554,6 +1614,7 @@
         "id": "c992d704ba81a2c8",
         "type": "debug",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "debug-wind-avg",
         "active": false,
         "tosidebar": true,
@@ -1563,18 +1624,19 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 500,
-        "y": 220,
+        "x": 1160,
+        "y": 180,
         "wires": []
     },
     {
         "id": "c5c869eb8bccde88",
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wind-direction-avg",
         "updates": false,
-        "x": 150,
-        "y": 220,
+        "x": 810,
+        "y": 180,
         "wires": [
             [
                 "c992d704ba81a2c8",
@@ -1586,6 +1648,7 @@
         "id": "7a13805371e69de5",
         "type": "ui_gauge",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "a6dbb44b8889dd75",
         "order": 2,
@@ -1606,18 +1669,19 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 530,
-        "y": 280,
+        "x": 1190,
+        "y": 240,
         "wires": []
     },
     {
         "id": "b15e8a9e07a3075b",
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wind-speed-avg",
         "updates": false,
-        "x": 140,
-        "y": 400,
+        "x": 800,
+        "y": 300,
         "wires": [
             [
                 "e070c38954242d37",
@@ -1629,6 +1693,7 @@
         "id": "e070c38954242d37",
         "type": "debug",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "debug-speed-avg",
         "active": false,
         "tosidebar": true,
@@ -1638,14 +1703,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 400,
+        "x": 1170,
+        "y": 300,
         "wires": []
     },
     {
         "id": "78b4396ff5b67210",
         "type": "ui_gauge",
         "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "a6dbb44b8889dd75",
         "order": 3,
@@ -1666,14 +1732,15 @@
         "seg2": "20",
         "diff": false,
         "className": "",
-        "x": 520,
-        "y": 480,
+        "x": 1180,
+        "y": 360,
         "wires": []
     },
     {
         "id": "cffd4e9e525cbff7",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "dedfe75ed71925fe",
         "order": 1,
@@ -1694,14 +1761,15 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 380,
-        "y": 40,
+        "x": 440,
+        "y": 120,
         "wires": []
     },
     {
         "id": "baadd5aa5c5ac46c",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "dedfe75ed71925fe",
         "order": 3,
@@ -1722,14 +1790,15 @@
         "seg2": "20",
         "diff": false,
         "className": "",
-        "x": 370,
-        "y": 120,
+        "x": 430,
+        "y": 60,
         "wires": []
     },
     {
         "id": "d2d6bea322e64847",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "dedfe75ed71925fe",
         "order": 2,
@@ -1750,14 +1819,15 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 370,
-        "y": 360,
+        "x": 430,
+        "y": 300,
         "wires": []
     },
     {
         "id": "e0890438c866a057",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "",
         "group": "dedfe75ed71925fe",
         "order": 4,
@@ -1778,18 +1848,19 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 380,
-        "y": 440,
+        "x": 440,
+        "y": 360,
         "wires": []
     },
     {
         "id": "8e786216ee0c58a3",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-yaw.setpoint",
         "updates": false,
         "x": 130,
-        "y": 440,
+        "y": 360,
         "wires": [
             [
                 "e0890438c866a057"
@@ -1799,11 +1870,12 @@
     {
         "id": "ee65979c52f15882",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-yaw.current",
         "updates": false,
-        "x": 130,
-        "y": 360,
+        "x": 120,
+        "y": 300,
         "wires": [
             [
                 "d2d6bea322e64847"
@@ -1813,11 +1885,12 @@
     {
         "id": "189251698ec579b8",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-pressure",
         "updates": false,
         "x": 120,
-        "y": 280,
+        "y": 240,
         "wires": [
             [
                 "0c0da14e0271b883"
@@ -1827,11 +1900,12 @@
     {
         "id": "dc4c8ef6766e7d33",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-temp.high",
         "updates": false,
         "x": 120,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "eb4a1fef2e6335dc"
@@ -1841,11 +1915,12 @@
     {
         "id": "aa5ef85187fef0f7",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-speed.high",
         "updates": false,
-        "x": 130,
-        "y": 120,
+        "x": 120,
+        "y": 60,
         "wires": [
             [
                 "baadd5aa5c5ac46c"
@@ -1855,11 +1930,12 @@
     {
         "id": "1970534a2eac1f4a",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-dir.high",
         "updates": false,
         "x": 110,
-        "y": 40,
+        "y": 120,
         "wires": [
             [
                 "cffd4e9e525cbff7"
@@ -1869,7 +1945,8 @@
     {
         "id": "0c0da14e0271b883",
         "type": "ui_text",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "group": "dedfe75ed71925fe",
         "order": 7,
         "width": 6,
@@ -1883,14 +1960,15 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 410,
-        "y": 280,
+        "x": 470,
+        "y": 240,
         "wires": []
     },
     {
         "id": "eb4a1fef2e6335dc",
         "type": "ui_text",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "group": "dedfe75ed71925fe",
         "order": 5,
         "width": 6,
@@ -1904,18 +1982,19 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 360,
-        "y": 200,
+        "x": 420,
+        "y": 180,
         "wires": []
     },
     {
         "id": "65747b326da3f1ad",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-turbine.mw-output",
         "updates": false,
         "x": 150,
-        "y": 520,
+        "y": 420,
         "wires": [
             [
                 "20bcb6dfd88401ed"
@@ -1925,7 +2004,8 @@
     {
         "id": "20bcb6dfd88401ed",
         "type": "ui_text",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "group": "dedfe75ed71925fe",
         "order": 6,
         "width": 6,
@@ -1939,18 +2019,19 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 390,
-        "y": 520,
+        "x": 450,
+        "y": 420,
         "wires": []
     },
     {
         "id": "5b2918354ff83a76",
         "type": "ui_button",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "Farm",
         "group": "dedfe75ed71925fe",
-        "order": 11,
-        "width": "4",
+        "order": 13,
+        "width": 4,
         "height": 1,
         "passthru": false,
         "label": "Farm",
@@ -1963,8 +2044,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 90,
-        "y": 620,
+        "x": 770,
+        "y": 420,
         "wires": [
             [
                 "4b85c0e005805e96"
@@ -1974,7 +2055,8 @@
     {
         "id": "4b85c0e005805e96",
         "type": "change",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "Farm",
         "rules": [
             {
@@ -1990,8 +2072,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 250,
-        "y": 620,
+        "x": 930,
+        "y": 420,
         "wires": [
             [
                 "4bc0d216a340aa99"
@@ -2001,11 +2083,12 @@
     {
         "id": "4bc0d216a340aa99",
         "type": "ui_ui_control",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
         "name": "Farm tab",
         "events": "all",
-        "x": 420,
-        "y": 620,
+        "x": 1100,
+        "y": 420,
         "wires": [
             []
         ]
@@ -2013,7 +2096,7 @@
     {
         "id": "628d315e1d1a4c91",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "",
         "group": "e6486a846f78c532",
         "order": 1,
@@ -2035,13 +2118,13 @@
         "diff": false,
         "className": "",
         "x": 380,
-        "y": 740,
+        "y": 760,
         "wires": []
     },
     {
         "id": "b2c61bb8cf31aadf",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "",
         "group": "e6486a846f78c532",
         "order": 3,
@@ -2062,14 +2145,14 @@
         "seg2": "20",
         "diff": false,
         "className": "",
-        "x": 370,
+        "x": 360,
         "y": 820,
         "wires": []
     },
     {
         "id": "8a57a4d775768534",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "",
         "group": "e6486a846f78c532",
         "order": 2,
@@ -2097,7 +2180,7 @@
     {
         "id": "18d28e3fa54c1c96",
         "type": "ui_gauge",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "",
         "group": "e6486a846f78c532",
         "order": 4,
@@ -2125,7 +2208,7 @@
     {
         "id": "3d40702ad99c9d4a",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-yaw.setpoint",
         "updates": false,
         "x": 130,
@@ -2139,7 +2222,7 @@
     {
         "id": "f9ba400bd6b6c896",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-yaw.current",
         "updates": false,
         "x": 130,
@@ -2153,7 +2236,7 @@
     {
         "id": "975af108a7525e74",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-pressure",
         "updates": false,
         "x": 120,
@@ -2167,7 +2250,7 @@
     {
         "id": "4251037e4f52fdde",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-temp.high",
         "updates": false,
         "x": 120,
@@ -2181,10 +2264,10 @@
     {
         "id": "8a9a38a42386f538",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-speed.high",
         "updates": false,
-        "x": 130,
+        "x": 120,
         "y": 820,
         "wires": [
             [
@@ -2195,11 +2278,11 @@
     {
         "id": "97a508587f4e94df",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-dir.high",
         "updates": false,
         "x": 110,
-        "y": 740,
+        "y": 760,
         "wires": [
             [
                 "628d315e1d1a4c91"
@@ -2209,7 +2292,7 @@
     {
         "id": "1cd19bc3eae2882a",
         "type": "ui_text",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "group": "e6486a846f78c532",
         "order": 7,
         "width": 6,
@@ -2230,7 +2313,7 @@
     {
         "id": "ae57584223df60d3",
         "type": "ui_text",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "group": "e6486a846f78c532",
         "order": 5,
         "width": 6,
@@ -2251,7 +2334,7 @@
     {
         "id": "542e835f28e0ed66",
         "type": "ot-sim in",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "tag": "wtg-2-turbine.mw-output",
         "updates": false,
         "x": 150,
@@ -2265,7 +2348,7 @@
     {
         "id": "45dd77af9e0c5fd1",
         "type": "ui_text",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "group": "e6486a846f78c532",
         "order": 6,
         "width": 6,
@@ -2286,7 +2369,7 @@
     {
         "id": "c5f56ba7949ef747",
         "type": "ui_button",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "Farm",
         "group": "e6486a846f78c532",
         "order": 11,
@@ -2314,7 +2397,7 @@
     {
         "id": "f23af35f8a5a86e5",
         "type": "change",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "Farm",
         "rules": [
             {
@@ -2341,7 +2424,7 @@
     {
         "id": "d42a728e1b31b247",
         "type": "ui_ui_control",
-        "z": "26c59c063a382038",
+        "z": "1e4d1406de16ee4d",
         "name": "Farm tab",
         "events": "all",
         "x": 420,
@@ -2349,6 +2432,182 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2fdd8c2af66042ae",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "tag": "wtg-1-feathered",
+        "updates": false,
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "e6d19971bcbd25c6"
+            ]
+        ]
+    },
+    {
+        "id": "e6d19971bcbd25c6",
+        "type": "ui_text",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "group": "dedfe75ed71925fe",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Feathered",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 430,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "3a04c5be718d67d4",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "tag": "wtg-1-turbine.emergency-stop",
+        "updates": false,
+        "x": 1020,
+        "y": 620,
+        "wires": [
+            [
+                "3f3c1228a168b295",
+                "27ad65d6c79c45cc"
+            ]
+        ]
+    },
+    {
+        "id": "2e314e3006671f5e",
+        "type": "ot-sim out",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "tag": "wtg-1-turbine.emergency-stop",
+        "x": 1530,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3f3c1228a168b295",
+        "type": "change",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "name": "Release Stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "msg.payload = 1",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 540,
+        "wires": [
+            [
+                "78369ca698f9a3a8"
+            ]
+        ]
+    },
+    {
+        "id": "27ad65d6c79c45cc",
+        "type": "change",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "name": "Emergency Stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "msg.payload = 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 700,
+        "wires": [
+            [
+                "46a86401caf5cc37"
+            ]
+        ]
+    },
+    {
+        "id": "78369ca698f9a3a8",
+        "type": "ui_button",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "name": "",
+        "group": "dedfe75ed71925fe",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Release Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1380,
+        "y": 540,
+        "wires": [
+            [
+                "2e314e3006671f5e"
+            ]
+        ]
+    },
+    {
+        "id": "46a86401caf5cc37",
+        "type": "ui_button",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "name": "",
+        "group": "dedfe75ed71925fe",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Emergency Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1380,
+        "y": 700,
+        "wires": [
+            [
+                "2e314e3006671f5e"
+            ]
+        ]
     }
 ]
-

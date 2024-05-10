@@ -87,12 +87,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-1-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-1-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
