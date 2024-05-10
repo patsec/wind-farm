@@ -29,12 +29,56 @@
         speed = [speed1, speed2, speed3, speed4, speed5, speed6, speed7, speed8, speed9, speed10]
         filtered_speed = filter(speed, {# != 0})
         wind_speed = len(filtered_speed) != 0 ? avg(filtered_speed) : 0
+
+        stopped = true
+        stopped = stopped && stopped1  == 1
+        stopped = stopped && stopped2  == 1
+        stopped = stopped && stopped3  == 1
+        stopped = stopped && stopped4  == 1
+        stopped = stopped && stopped5  == 1
+        stopped = stopped && stopped6  == 1
+        stopped = stopped && stopped7  == 1
+        stopped = stopped && stopped8  == 1
+        stopped = stopped && stopped9  == 1
+        stopped = stopped && stopped10 == 1
+
+        status1  = connected1  == 1 ? connected1  + stopped1  : connected1
+        status2  = connected2  == 1 ? connected2  + stopped2  : connected2
+        status3  = connected3  == 1 ? connected3  + stopped3  : connected3
+        status4  = connected4  == 1 ? connected4  + stopped4  : connected4
+        status5  = connected5  == 1 ? connected5  + stopped5  : connected5
+        status6  = connected6  == 1 ? connected6  + stopped6  : connected6
+        status7  = connected7  == 1 ? connected7  + stopped7  : connected7
+        status8  = connected8  == 1 ? connected8  + stopped8  : connected8
+        status9  = connected9  == 1 ? connected9  + stopped9  : connected9
+        status10 = connected10 == 1 ? connected10 + stopped10 : connected10
       ]]>
     </program>
     <variables>
       <total_gen tag="wtg-total-farm.mw-output">0</total_gen>
       <wind_dir tag="wind-direction-avg">0</wind_dir>
       <wind_speed tag="wind-speed-avg">0</wind_speed>
+      <stopped tag="wind-farm-stopped">0</stopped>
+      <status1 tag="wtg-1.status">0</status1>
+      <status2 tag="wtg-2.status">0</status2>
+      <status3 tag="wtg-3.status">0</status3>
+      <status4 tag="wtg-4.status">0</status4>
+      <status5 tag="wtg-5.status">0</status5>
+      <status6 tag="wtg-6.status">0</status6>
+      <status7 tag="wtg-7.status">0</status7>
+      <status8 tag="wtg-8.status">0</status8>
+      <status9 tag="wtg-9.status">0</status9>
+      <status10 tag="wtg-10.status">0</status10>
+      <connected1 tag="wtg-1-dnp3-master.connected">0</connected1>
+      <connected2 tag="wtg-2-dnp3-master.connected">0</connected2>
+      <connected3 tag="wtg-3-dnp3-master.connected">0</connected3>
+      <connected4 tag="wtg-4-dnp3-master.connected">0</connected4>
+      <connected5 tag="wtg-5-dnp3-master.connected">0</connected5>
+      <connected6 tag="wtg-6-dnp3-master.connected">0</connected6>
+      <connected7 tag="wtg-7-dnp3-master.connected">0</connected7>
+      <connected8 tag="wtg-8-dnp3-master.connected">0</connected8>
+      <connected9 tag="wtg-9-dnp3-master.connected">0</connected9>
+      <connected10 tag="wtg-10-dnp3-master.connected">0</connected10>
       <wtg1 tag="wtg-1-turbine.mw-output">0</wtg1>
       <wtg2 tag="wtg-2-turbine.mw-output">0</wtg2>
       <wtg3 tag="wtg-3-turbine.mw-output">0</wtg3>
@@ -65,6 +109,16 @@
       <speed8 tag="wtg-8-speed.high">0</speed8>
       <speed9 tag="wtg-9-speed.high">0</speed9>
       <speed10 tag="wtg-10-speed.high">0</speed10>
+      <stopped1 tag="wtg-1-turbine.emergency-stop">1</stopped1>
+      <stopped2 tag="wtg-2-turbine.emergency-stop">1</stopped2>
+      <stopped3 tag="wtg-3-turbine.emergency-stop">1</stopped3>
+      <stopped4 tag="wtg-4-turbine.emergency-stop">1</stopped4>
+      <stopped5 tag="wtg-5-turbine.emergency-stop">1</stopped5>
+      <stopped6 tag="wtg-6-turbine.emergency-stop">1</stopped6>
+      <stopped7 tag="wtg-7-turbine.emergency-stop">1</stopped7>
+      <stopped8 tag="wtg-8-turbine.emergency-stop">1</stopped8>
+      <stopped9 tag="wtg-9-turbine.emergency-stop">1</stopped9>
+      <stopped10 tag="wtg-10-turbine.emergency-stop">1</stopped10>
     </variables>
   </logic>
   <node-red name="main-controller">
@@ -87,12 +141,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-1-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-1-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -158,12 +212,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-2-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-2-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -229,12 +283,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-3-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-3-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -300,12 +354,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-4-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-4-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -371,12 +425,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-5-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-5-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -434,7 +488,7 @@
   </dnp3>
   <!-- WTG 6 -->
   <dnp3 name="wtg-6-dnp3-master" mode="client">
-    <endpoint>wgt-6:20000</endpoint>
+    <endpoint>wtg-6:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -442,12 +496,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-6-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-6-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -505,7 +559,7 @@
   </dnp3>
   <!-- WTG 7 -->
   <dnp3 name="wtg-7-dnp3-master" mode="client">
-    <endpoint>wgt-7:20000</endpoint>
+    <endpoint>wtg-7:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -513,12 +567,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-7-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-7-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -576,7 +630,7 @@
   </dnp3>
   <!-- WTG 8 -->
   <dnp3 name="wtg-8-dnp3-master" mode="client">
-    <endpoint>wgt-8:20000</endpoint>
+    <endpoint>wtg-8:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -584,12 +638,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-8-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-8-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -647,7 +701,7 @@
   </dnp3>
   <!-- WTG 9 -->
   <dnp3 name="wtg-9-dnp3-master" mode="client">
-    <endpoint>wgt-9:20000</endpoint>
+    <endpoint>wtg-9:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -655,12 +709,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-9-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-9-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>
@@ -718,7 +772,7 @@
   </dnp3>
   <!-- WTG 10 -->
   <dnp3 name="wtg-10-dnp3-master" mode="client">
-    <endpoint>wgt-10:20000</endpoint>
+    <endpoint>wtg-10:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -726,12 +780,12 @@
       <output type="binary">
         <address>0</address>
         <tag>wtg-10-turbine.emergency-stop</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <output type="analog">
         <address>0</address>
         <tag>wtg-10-yaw.dir-error</tag>
-        <sbo>false</sbo>
+        <sbo>true</sbo>
       </output>
       <input type="analog">
         <address>0</address>

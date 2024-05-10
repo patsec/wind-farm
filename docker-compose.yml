@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   hmi:
     image: ghcr.io/patsec/ot-sim/ot-sim:main
@@ -12,7 +10,7 @@ services:
     - ./configs/ot-sim/hmi.xml:/etc/ot-sim/config.xml
     - ./configs/ot-sim/node-red.json:/etc/node-red.json
     ports:
-    - 1881:1880
+    - 1880:1880
     environment:
     - OTSIM_TAILSCALE_AUTHKEY=${OTSIM_TAILSCALE_AUTHKEY} # for Tailscale
     hostname: ${HOSTNAME} # for Tailscale
