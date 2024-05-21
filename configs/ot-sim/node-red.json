@@ -64,7 +64,58 @@
         ],
         "x": 14,
         "y": 19,
-        "w": 1672,
+        "w": 1682,
+        "h": 722
+    },
+    {
+        "id": "a4d8d1443d1b2647",
+        "type": "group",
+        "z": "1e4d1406de16ee4d",
+        "style": {
+            "stroke": "#333333",
+            "stroke-opacity": "1",
+            "fill": "#181818",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "91ba40c0564ceccf",
+            "065737e2e4fda77d",
+            "ed33b3e6063b1931",
+            "b97e0e7ff4c9cf72",
+            "80d9db4b9810d25c",
+            "622904ac667160e3",
+            "269fb68779925fdd",
+            "bf7fbab2564038ff",
+            "460eaeaa103e16bf",
+            "0cd03ae31e140608",
+            "97589cd8b6c0ec11",
+            "6fcb7aa21fafe387",
+            "b0da3a3c45cc7028",
+            "cc70875573880f45",
+            "7dcd5a93d74f9fe3",
+            "0c9597ceb43866c6",
+            "9ddc9c2730842e8a",
+            "96e8d537ed2393d4",
+            "e06bea66a5a72c2b",
+            "9730b1ac7f209c7f",
+            "57ce749e4f5af32b",
+            "98d4788e090567db",
+            "7eed9966a8c30e72",
+            "24614b74db1eb3f2",
+            "79e778a7964b0737",
+            "a1b2920f8ef79b2c",
+            "c8dea3740d3aebbd",
+            "01c8f36fb263cc2b",
+            "f0da69284e54deb0",
+            "605c34dac1253d22",
+            "9dd07e3bb6ae0c5b"
+        ],
+        "x": 14,
+        "y": 759,
+        "w": 1682,
         "h": 722
     },
     {
@@ -342,7 +393,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-dnp3-master.connected",
         "updates": false,
-        "x": 160,
+        "x": 170,
         "y": 540,
         "wires": [
             [
@@ -365,7 +416,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
+        "x": 440,
         "y": 540,
         "wires": []
     },
@@ -390,7 +441,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 340,
+        "x": 350,
         "y": 620,
         "wires": [
             [
@@ -411,7 +462,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 150,
+        "x": 160,
         "y": 620,
         "wires": [
             [
@@ -439,7 +490,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
+        "x": 530,
         "y": 620,
         "wires": [
             [
@@ -454,127 +505,8 @@
         "g": "6c7ae6ea8dbc2394",
         "name": "WTG-1 tab",
         "events": "all",
-        "x": 690,
+        "x": 700,
         "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ce70fa54a117d6b1",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 960,
-        "wires": [
-            [
-                "af824d7155f0b76f",
-                "48d14caa0d2fcd37"
-            ]
-        ]
-    },
-    {
-        "id": "af824d7155f0b76f",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "7d2150a9fa05b01d",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-2 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 7,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 1040,
-        "wires": [
-            [
-                "1bebcada4280d799"
-            ]
-        ]
-    },
-    {
-        "id": "48d14caa0d2fcd37",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-2 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-2 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 1040,
-        "wires": [
-            [
-                "7d2150a9fa05b01d"
-            ]
-        ]
-    },
-    {
-        "id": "1bebcada4280d799",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-2",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-2\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 1040,
-        "wires": [
-            [
-                "c55197922faab9be"
-            ]
-        ]
-    },
-    {
-        "id": "c55197922faab9be",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-2 tab",
-        "events": "all",
-        "x": 810,
-        "y": 1040,
         "wires": [
             []
         ]
@@ -586,7 +518,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-total-farm.mw-output",
         "updates": false,
-        "x": 830,
+        "x": 840,
         "y": 60,
         "wires": [
             [
@@ -609,7 +541,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1150,
+        "x": 1160,
         "y": 60,
         "wires": []
     },
@@ -652,960 +584,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1200,
+        "x": 1210,
         "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d8a7818b9a7035e9",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-3-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 1160,
-        "wires": [
-            [
-                "6209d127e6f91181",
-                "9d060a063c33c479"
-            ]
-        ]
-    },
-    {
-        "id": "6209d127e6f91181",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-3",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "783c384587cb1afb",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-3 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 8,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 1240,
-        "wires": [
-            [
-                "29bb42f3107f4a77"
-            ]
-        ]
-    },
-    {
-        "id": "9d060a063c33c479",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-3 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-3 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 1240,
-        "wires": [
-            [
-                "783c384587cb1afb"
-            ]
-        ]
-    },
-    {
-        "id": "29bb42f3107f4a77",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-3",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-3\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 1240,
-        "wires": [
-            [
-                "c55560aedd974e32"
-            ]
-        ]
-    },
-    {
-        "id": "c55560aedd974e32",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-3 tab",
-        "events": "all",
-        "x": 810,
-        "y": 1240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "643c9ecdf54ea35c",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-4-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 1360,
-        "wires": [
-            [
-                "2c3e9df3813cba9e",
-                "eab1242a2a5c509e"
-            ]
-        ]
-    },
-    {
-        "id": "2c3e9df3813cba9e",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-4",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 1360,
-        "wires": []
-    },
-    {
-        "id": "5923fc854ebf783e",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-4 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 9,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 1440,
-        "wires": [
-            [
-                "52557a0c4a10df06"
-            ]
-        ]
-    },
-    {
-        "id": "eab1242a2a5c509e",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-4 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-4 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 1440,
-        "wires": [
-            [
-                "5923fc854ebf783e"
-            ]
-        ]
-    },
-    {
-        "id": "52557a0c4a10df06",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-5",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-4\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 1440,
-        "wires": [
-            [
-                "9c21f08b5dd00bec"
-            ]
-        ]
-    },
-    {
-        "id": "9c21f08b5dd00bec",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-4 tab",
-        "events": "all",
-        "x": 810,
-        "y": 1440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d56db77dd693b6ac",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-5-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 1560,
-        "wires": [
-            [
-                "d766864d734320cb",
-                "6687319eb1aad4f3"
-            ]
-        ]
-    },
-    {
-        "id": "d766864d734320cb",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-5",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 1560,
-        "wires": []
-    },
-    {
-        "id": "efa1de359a076c1c",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-5 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 10,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 1640,
-        "wires": [
-            [
-                "52f891d6dbc481b1"
-            ]
-        ]
-    },
-    {
-        "id": "6687319eb1aad4f3",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-5 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-5 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 1640,
-        "wires": [
-            [
-                "efa1de359a076c1c"
-            ]
-        ]
-    },
-    {
-        "id": "52f891d6dbc481b1",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-5",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-5\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 1640,
-        "wires": [
-            [
-                "fc1d288d262e4e2d"
-            ]
-        ]
-    },
-    {
-        "id": "fc1d288d262e4e2d",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-5 tab",
-        "events": "all",
-        "x": 810,
-        "y": 1640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d71f56c4f1f49295",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-6-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 1760,
-        "wires": [
-            [
-                "16c0cc69f2dc997c",
-                "83e5af951267a1c7"
-            ]
-        ]
-    },
-    {
-        "id": "16c0cc69f2dc997c",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-6",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 1760,
-        "wires": []
-    },
-    {
-        "id": "d69fa43e0b5d7e65",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-6 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 11,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 1840,
-        "wires": [
-            [
-                "0d6b914de37d79f1"
-            ]
-        ]
-    },
-    {
-        "id": "83e5af951267a1c7",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-6 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-6 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 1840,
-        "wires": [
-            [
-                "d69fa43e0b5d7e65"
-            ]
-        ]
-    },
-    {
-        "id": "0d6b914de37d79f1",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-6",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-6\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 1840,
-        "wires": [
-            [
-                "ea4bf57cd3754ab2"
-            ]
-        ]
-    },
-    {
-        "id": "ea4bf57cd3754ab2",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-6 tab",
-        "events": "all",
-        "x": 810,
-        "y": 1840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2e7d0fe67e195e25",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-7-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 1960,
-        "wires": [
-            [
-                "7830fe7886a86088",
-                "07602b8350a9278d"
-            ]
-        ]
-    },
-    {
-        "id": "7830fe7886a86088",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-7",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 1960,
-        "wires": []
-    },
-    {
-        "id": "343d69a0dec2dbfe",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-7 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 12,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 2040,
-        "wires": [
-            [
-                "a36fd7c44dd540e7"
-            ]
-        ]
-    },
-    {
-        "id": "07602b8350a9278d",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-7 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-7 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 2040,
-        "wires": [
-            [
-                "343d69a0dec2dbfe"
-            ]
-        ]
-    },
-    {
-        "id": "a36fd7c44dd540e7",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-7",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-7\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 2040,
-        "wires": [
-            [
-                "364c92b011ee45cb"
-            ]
-        ]
-    },
-    {
-        "id": "364c92b011ee45cb",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-7 tab",
-        "events": "all",
-        "x": 810,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "942ac1265c232b3a",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-8-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 2160,
-        "wires": [
-            [
-                "4416c338852a38de",
-                "cabe070bb8cde609"
-            ]
-        ]
-    },
-    {
-        "id": "4416c338852a38de",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-8",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 2160,
-        "wires": []
-    },
-    {
-        "id": "2ba365546770e17c",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-8 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 13,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 2240,
-        "wires": [
-            [
-                "69d425c2533658f3"
-            ]
-        ]
-    },
-    {
-        "id": "cabe070bb8cde609",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-8 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-8 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 2240,
-        "wires": [
-            [
-                "2ba365546770e17c"
-            ]
-        ]
-    },
-    {
-        "id": "69d425c2533658f3",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-8",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-8\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 2240,
-        "wires": [
-            [
-                "17f6a5221e791bdc"
-            ]
-        ]
-    },
-    {
-        "id": "17f6a5221e791bdc",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-8 tab",
-        "events": "all",
-        "x": 810,
-        "y": 2240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4e347653f297c9ba",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-9-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 2360,
-        "wires": [
-            [
-                "dc1fc48f09975874",
-                "0a6f071ae2a378f4"
-            ]
-        ]
-    },
-    {
-        "id": "dc1fc48f09975874",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-9",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 2360,
-        "wires": []
-    },
-    {
-        "id": "87392e7a98c12fa7",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-9 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 15,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 2440,
-        "wires": [
-            [
-                "94e146cc671ca928"
-            ]
-        ]
-    },
-    {
-        "id": "0a6f071ae2a378f4",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-9 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-9 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 2440,
-        "wires": [
-            [
-                "87392e7a98c12fa7"
-            ]
-        ]
-    },
-    {
-        "id": "94e146cc671ca928",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-9",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-9\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 2440,
-        "wires": [
-            [
-                "24c425aa7db46b10"
-            ]
-        ]
-    },
-    {
-        "id": "24c425aa7db46b10",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-9 tab",
-        "events": "all",
-        "x": 810,
-        "y": 2440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0cc3a8ce98cc1d5",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-10-dnp3-master.connected",
-        "updates": false,
-        "x": 190,
-        "y": 2560,
-        "wires": [
-            [
-                "5491dc73226e8b46",
-                "b37f2aeafe2d280c"
-            ]
-        ]
-    },
-    {
-        "id": "5491dc73226e8b46",
-        "type": "debug",
-        "z": "1e4d1406de16ee4d",
-        "name": "debug-wtg-10",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 2560,
-        "wires": []
-    },
-    {
-        "id": "edafaa2e002eaafd",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-10 Button",
-        "group": "a6dbb44b8889dd75",
-        "order": 16,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "{{label}}",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 460,
-        "y": 2640,
-        "wires": [
-            [
-                "a511a30b240c0511"
-            ]
-        ]
-    },
-    {
-        "id": "b37f2aeafe2d280c",
-        "type": "function",
-        "z": "1e4d1406de16ee4d",
-        "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-10 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-10 Down\"\n    return msg;}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 2640,
-        "wires": [
-            [
-                "edafaa2e002eaafd"
-            ]
-        ]
-    },
-    {
-        "id": "a511a30b240c0511",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-10",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"WTG-10\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 640,
-        "y": 2640,
-        "wires": [
-            [
-                "669a7148aba4ab5e"
-            ]
-        ]
-    },
-    {
-        "id": "669a7148aba4ab5e",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "WTG-10 tab",
-        "events": "all",
-        "x": 810,
-        "y": 2640,
         "wires": [
             []
         ]
@@ -1624,7 +604,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1160,
+        "x": 1170,
         "y": 180,
         "wires": []
     },
@@ -1635,7 +615,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wind-direction-avg",
         "updates": false,
-        "x": 810,
+        "x": 820,
         "y": 180,
         "wires": [
             [
@@ -1669,7 +649,7 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 1190,
+        "x": 1200,
         "y": 240,
         "wires": []
     },
@@ -1680,7 +660,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wind-speed-avg",
         "updates": false,
-        "x": 800,
+        "x": 810,
         "y": 300,
         "wires": [
             [
@@ -1703,7 +683,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
+        "x": 1180,
         "y": 300,
         "wires": []
     },
@@ -1732,7 +712,7 @@
         "seg2": "20",
         "diff": false,
         "className": "",
-        "x": 1180,
+        "x": 1190,
         "y": 360,
         "wires": []
     },
@@ -1761,7 +741,7 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 440,
+        "x": 450,
         "y": 120,
         "wires": []
     },
@@ -1790,7 +770,7 @@
         "seg2": "20",
         "diff": false,
         "className": "",
-        "x": 430,
+        "x": 440,
         "y": 60,
         "wires": []
     },
@@ -1819,7 +799,7 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 430,
+        "x": 440,
         "y": 300,
         "wires": []
     },
@@ -1848,7 +828,7 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 440,
+        "x": 450,
         "y": 360,
         "wires": []
     },
@@ -1859,7 +839,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-yaw.setpoint",
         "updates": false,
-        "x": 130,
+        "x": 140,
         "y": 360,
         "wires": [
             [
@@ -1874,7 +854,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-yaw.current",
         "updates": false,
-        "x": 120,
+        "x": 130,
         "y": 300,
         "wires": [
             [
@@ -1889,7 +869,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-pressure",
         "updates": false,
-        "x": 120,
+        "x": 130,
         "y": 240,
         "wires": [
             [
@@ -1904,7 +884,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-temp.high",
         "updates": false,
-        "x": 120,
+        "x": 130,
         "y": 180,
         "wires": [
             [
@@ -1919,7 +899,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-speed.high",
         "updates": false,
-        "x": 120,
+        "x": 130,
         "y": 60,
         "wires": [
             [
@@ -1934,7 +914,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-dir.high",
         "updates": false,
-        "x": 110,
+        "x": 120,
         "y": 120,
         "wires": [
             [
@@ -1960,7 +940,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 470,
+        "x": 480,
         "y": 240,
         "wires": []
     },
@@ -1982,7 +962,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 420,
+        "x": 430,
         "y": 180,
         "wires": []
     },
@@ -1993,7 +973,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-turbine.mw-output",
         "updates": false,
-        "x": 150,
+        "x": 160,
         "y": 420,
         "wires": [
             [
@@ -2019,7 +999,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 450,
+        "x": 460,
         "y": 420,
         "wires": []
     },
@@ -2044,7 +1024,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 770,
+        "x": 780,
         "y": 420,
         "wires": [
             [
@@ -2072,7 +1052,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
+        "x": 940,
         "y": 420,
         "wires": [
             [
@@ -2087,348 +1067,8 @@
         "g": "6c7ae6ea8dbc2394",
         "name": "Farm tab",
         "events": "all",
-        "x": 1100,
+        "x": 1110,
         "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "628d315e1d1a4c91",
-        "type": "ui_gauge",
-        "z": "1e4d1406de16ee4d",
-        "name": "",
-        "group": "e6486a846f78c532",
-        "order": 1,
-        "width": 6,
-        "height": 5,
-        "gtype": "compass",
-        "title": "Wind Direction",
-        "label": "deg",
-        "format": "{{value | number:0}}",
-        "min": 0,
-        "max": "360",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 380,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "b2c61bb8cf31aadf",
-        "type": "ui_gauge",
-        "z": "1e4d1406de16ee4d",
-        "name": "",
-        "group": "e6486a846f78c532",
-        "order": 3,
-        "width": 6,
-        "height": 5,
-        "gtype": "gage",
-        "title": "Wind Speed",
-        "label": "m/s",
-        "format": "{{value | number:0}}",
-        "min": "0",
-        "max": "25",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "10",
-        "seg2": "20",
-        "diff": false,
-        "className": "",
-        "x": 360,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "8a57a4d775768534",
-        "type": "ui_gauge",
-        "z": "1e4d1406de16ee4d",
-        "name": "",
-        "group": "e6486a846f78c532",
-        "order": 2,
-        "width": 6,
-        "height": 5,
-        "gtype": "compass",
-        "title": "Yaw Current",
-        "label": "deg",
-        "format": "{{value | number:0}}",
-        "min": 0,
-        "max": "360",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 370,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "18d28e3fa54c1c96",
-        "type": "ui_gauge",
-        "z": "1e4d1406de16ee4d",
-        "name": "",
-        "group": "e6486a846f78c532",
-        "order": 4,
-        "width": 6,
-        "height": 5,
-        "gtype": "compass",
-        "title": "Yaw Set-point",
-        "label": "deg",
-        "format": "{{value | number:0}}",
-        "min": 0,
-        "max": "360",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 380,
-        "y": 1140,
-        "wires": []
-    },
-    {
-        "id": "3d40702ad99c9d4a",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-yaw.setpoint",
-        "updates": false,
-        "x": 130,
-        "y": 1140,
-        "wires": [
-            [
-                "18d28e3fa54c1c96"
-            ]
-        ]
-    },
-    {
-        "id": "f9ba400bd6b6c896",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-yaw.current",
-        "updates": false,
-        "x": 130,
-        "y": 1060,
-        "wires": [
-            [
-                "8a57a4d775768534"
-            ]
-        ]
-    },
-    {
-        "id": "975af108a7525e74",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-pressure",
-        "updates": false,
-        "x": 120,
-        "y": 980,
-        "wires": [
-            [
-                "1cd19bc3eae2882a"
-            ]
-        ]
-    },
-    {
-        "id": "4251037e4f52fdde",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-temp.high",
-        "updates": false,
-        "x": 120,
-        "y": 900,
-        "wires": [
-            [
-                "ae57584223df60d3"
-            ]
-        ]
-    },
-    {
-        "id": "8a9a38a42386f538",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-speed.high",
-        "updates": false,
-        "x": 120,
-        "y": 820,
-        "wires": [
-            [
-                "b2c61bb8cf31aadf"
-            ]
-        ]
-    },
-    {
-        "id": "97a508587f4e94df",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-dir.high",
-        "updates": false,
-        "x": 110,
-        "y": 760,
-        "wires": [
-            [
-                "628d315e1d1a4c91"
-            ]
-        ]
-    },
-    {
-        "id": "1cd19bc3eae2882a",
-        "type": "ui_text",
-        "z": "1e4d1406de16ee4d",
-        "group": "e6486a846f78c532",
-        "order": 7,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "Absolute Pressure (kPa)",
-        "format": "{{msg.payload | number:2}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 410,
-        "y": 980,
-        "wires": []
-    },
-    {
-        "id": "ae57584223df60d3",
-        "type": "ui_text",
-        "z": "1e4d1406de16ee4d",
-        "group": "e6486a846f78c532",
-        "order": 5,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "Temp (C)",
-        "format": "{{msg.payload | number:1}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 360,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "542e835f28e0ed66",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "tag": "wtg-2-turbine.mw-output",
-        "updates": false,
-        "x": 150,
-        "y": 1220,
-        "wires": [
-            [
-                "45dd77af9e0c5fd1"
-            ]
-        ]
-    },
-    {
-        "id": "45dd77af9e0c5fd1",
-        "type": "ui_text",
-        "z": "1e4d1406de16ee4d",
-        "group": "e6486a846f78c532",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "Power Output (kW)",
-        "format": "{{msg.payload | number:2}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 390,
-        "y": 1220,
-        "wires": []
-    },
-    {
-        "id": "c5f56ba7949ef747",
-        "type": "ui_button",
-        "z": "1e4d1406de16ee4d",
-        "name": "Farm",
-        "group": "e6486a846f78c532",
-        "order": 11,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Farm",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "{{background}}",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 90,
-        "y": 1320,
-        "wires": [
-            [
-                "f23af35f8a5a86e5"
-            ]
-        ]
-    },
-    {
-        "id": "f23af35f8a5a86e5",
-        "type": "change",
-        "z": "1e4d1406de16ee4d",
-        "name": "Farm",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"Farm\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 250,
-        "y": 1320,
-        "wires": [
-            [
-                "d42a728e1b31b247"
-            ]
-        ]
-    },
-    {
-        "id": "d42a728e1b31b247",
-        "type": "ui_ui_control",
-        "z": "1e4d1406de16ee4d",
-        "name": "Farm tab",
-        "events": "all",
-        "x": 420,
-        "y": 1320,
         "wires": [
             []
         ]
@@ -2440,7 +1080,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-feathered",
         "updates": false,
-        "x": 120,
+        "x": 130,
         "y": 480,
         "wires": [
             [
@@ -2466,7 +1106,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 430,
+        "x": 440,
         "y": 480,
         "wires": []
     },
@@ -2477,7 +1117,7 @@
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-turbine.emergency-stop",
         "updates": false,
-        "x": 1020,
+        "x": 1030,
         "y": 620,
         "wires": [
             [
@@ -2492,7 +1132,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "6c7ae6ea8dbc2394",
         "tag": "wtg-1-turbine.emergency-stop",
-        "x": 1530,
+        "x": 1540,
         "y": 620,
         "wires": []
     },
@@ -2516,7 +1156,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
+        "x": 1150,
         "y": 540,
         "wires": [
             [
@@ -2544,7 +1184,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
+        "x": 1150,
         "y": 700,
         "wires": [
             [
@@ -2573,7 +1213,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1380,
+        "x": 1390,
         "y": 540,
         "wires": [
             [
@@ -2602,11 +1242,670 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1380,
+        "x": 1390,
         "y": 700,
         "wires": [
             [
                 "2e314e3006671f5e"
+            ]
+        ]
+    },
+    {
+        "id": "91ba40c0564ceccf",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-dnp3-master.connected",
+        "updates": false,
+        "x": 170,
+        "y": 1280,
+        "wires": [
+            [
+                "065737e2e4fda77d",
+                "b97e0e7ff4c9cf72"
+            ]
+        ]
+    },
+    {
+        "id": "065737e2e4fda77d",
+        "type": "debug",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "debug-wtg-1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ed33b3e6063b1931",
+        "type": "ui_button",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "WTG-2 Button",
+        "group": "a6dbb44b8889dd75",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "{{label}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 350,
+        "y": 1360,
+        "wires": [
+            [
+                "80d9db4b9810d25c"
+            ]
+        ]
+    },
+    {
+        "id": "b97e0e7ff4c9cf72",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "button-color",
+        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-2 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-2 Down\"\n    return msg;}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 1360,
+        "wires": [
+            [
+                "ed33b3e6063b1931"
+            ]
+        ]
+    },
+    {
+        "id": "80d9db4b9810d25c",
+        "type": "change",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "WTG-2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"WTG-2\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1360,
+        "wires": [
+            [
+                "622904ac667160e3"
+            ]
+        ]
+    },
+    {
+        "id": "622904ac667160e3",
+        "type": "ui_ui_control",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "WTG-2 tab",
+        "events": "all",
+        "x": 700,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "269fb68779925fdd",
+        "type": "ui_gauge",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "",
+        "group": "e6486a846f78c532",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "compass",
+        "title": "Wind Direction",
+        "label": "deg",
+        "format": "{{value | number:0}}",
+        "min": 0,
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "bf7fbab2564038ff",
+        "type": "ui_gauge",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "",
+        "group": "e6486a846f78c532",
+        "order": 3,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Wind Speed",
+        "label": "m/s",
+        "format": "{{value | number:0}}",
+        "min": "0",
+        "max": "25",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "20",
+        "diff": false,
+        "className": "",
+        "x": 440,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "460eaeaa103e16bf",
+        "type": "ui_gauge",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "",
+        "group": "e6486a846f78c532",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "compass",
+        "title": "Yaw Current",
+        "label": "deg",
+        "format": "{{value | number:0}}",
+        "min": 0,
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 440,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "0cd03ae31e140608",
+        "type": "ui_gauge",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "",
+        "group": "e6486a846f78c532",
+        "order": 4,
+        "width": 6,
+        "height": 5,
+        "gtype": "compass",
+        "title": "Yaw Set-point",
+        "label": "deg",
+        "format": "{{value | number:0}}",
+        "min": 0,
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "97589cd8b6c0ec11",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-yaw.setpoint",
+        "updates": false,
+        "x": 140,
+        "y": 1100,
+        "wires": [
+            [
+                "0cd03ae31e140608"
+            ]
+        ]
+    },
+    {
+        "id": "6fcb7aa21fafe387",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-yaw.current",
+        "updates": false,
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "460eaeaa103e16bf"
+            ]
+        ]
+    },
+    {
+        "id": "b0da3a3c45cc7028",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-pressure",
+        "updates": false,
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "9ddc9c2730842e8a"
+            ]
+        ]
+    },
+    {
+        "id": "cc70875573880f45",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-temp.high",
+        "updates": false,
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "96e8d537ed2393d4"
+            ]
+        ]
+    },
+    {
+        "id": "7dcd5a93d74f9fe3",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-speed.high",
+        "updates": false,
+        "x": 130,
+        "y": 800,
+        "wires": [
+            [
+                "bf7fbab2564038ff"
+            ]
+        ]
+    },
+    {
+        "id": "0c9597ceb43866c6",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-dir.high",
+        "updates": false,
+        "x": 120,
+        "y": 860,
+        "wires": [
+            [
+                "269fb68779925fdd"
+            ]
+        ]
+    },
+    {
+        "id": "9ddc9c2730842e8a",
+        "type": "ui_text",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "group": "e6486a846f78c532",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Absolute Pressure (kPa)",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 480,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "96e8d537ed2393d4",
+        "type": "ui_text",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "group": "e6486a846f78c532",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Temp (C)",
+        "format": "{{msg.payload | number:1}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 430,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "e06bea66a5a72c2b",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-turbine.mw-output",
+        "updates": false,
+        "x": 160,
+        "y": 1160,
+        "wires": [
+            [
+                "9730b1ac7f209c7f"
+            ]
+        ]
+    },
+    {
+        "id": "9730b1ac7f209c7f",
+        "type": "ui_text",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "group": "e6486a846f78c532",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Power Output (kW)",
+        "format": "{{msg.payload | number:2}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 460,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "57ce749e4f5af32b",
+        "type": "ui_button",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "Farm",
+        "group": "dedfe75ed71925fe",
+        "order": 13,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Farm",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 780,
+        "y": 1160,
+        "wires": [
+            [
+                "98d4788e090567db"
+            ]
+        ]
+    },
+    {
+        "id": "98d4788e090567db",
+        "type": "change",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "Farm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"Farm\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1160,
+        "wires": [
+            [
+                "7eed9966a8c30e72"
+            ]
+        ]
+    },
+    {
+        "id": "7eed9966a8c30e72",
+        "type": "ui_ui_control",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "Farm tab",
+        "events": "all",
+        "x": 1110,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24614b74db1eb3f2",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-feathered",
+        "updates": false,
+        "x": 130,
+        "y": 1220,
+        "wires": [
+            [
+                "79e778a7964b0737"
+            ]
+        ]
+    },
+    {
+        "id": "79e778a7964b0737",
+        "type": "ui_text",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "group": "e6486a846f78c532",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Feathered",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 440,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "a1b2920f8ef79b2c",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-turbine.emergency-stop",
+        "updates": false,
+        "x": 1030,
+        "y": 1360,
+        "wires": [
+            [
+                "01c8f36fb263cc2b",
+                "f0da69284e54deb0"
+            ]
+        ]
+    },
+    {
+        "id": "c8dea3740d3aebbd",
+        "type": "ot-sim out",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "tag": "wtg-2-turbine.emergency-stop",
+        "x": 1540,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "01c8f36fb263cc2b",
+        "type": "change",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "Release Stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "msg.payload = 1",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 1280,
+        "wires": [
+            [
+                "605c34dac1253d22"
+            ]
+        ]
+    },
+    {
+        "id": "f0da69284e54deb0",
+        "type": "change",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "Emergency Stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "msg.payload = 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 1440,
+        "wires": [
+            [
+                "9dd07e3bb6ae0c5b"
+            ]
+        ]
+    },
+    {
+        "id": "605c34dac1253d22",
+        "type": "ui_button",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "",
+        "group": "e6486a846f78c532",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Release Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1390,
+        "y": 1280,
+        "wires": [
+            [
+                "c8dea3740d3aebbd"
+            ]
+        ]
+    },
+    {
+        "id": "9dd07e3bb6ae0c5b",
+        "type": "ui_button",
+        "z": "1e4d1406de16ee4d",
+        "g": "a4d8d1443d1b2647",
+        "name": "",
+        "group": "e6486a846f78c532",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Emergency Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1390,
+        "y": 1440,
+        "wires": [
+            [
+                "c8dea3740d3aebbd"
             ]
         ]
     }
