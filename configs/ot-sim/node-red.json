@@ -135,21 +135,11 @@
             "7702eb31b1d19aaa",
             "98d532f91e5e1bd5",
             "c6b5245e70bb4165",
-            "8cccb5d6fbe65c42",
             "de48480a53edb810",
             "dcf1bb257f418fd6",
             "cd4b90b8fedb9a2d",
             "d8d67d076449abf2",
             "8dc17f7d9568ade2",
-            "622a1781bdd8384b",
-            "a0dd6c9181a6d7a0",
-            "0021c42050e6f9b5",
-            "1026a06bdec53cff",
-            "a7eaba7c926adaba",
-            "63088f8694edcb42",
-            "eac5c5af6853d749",
-            "3e55c62242980d61",
-            "c691389c194d7378",
             "bff7ef2bbb49fdec",
             "70e15729ae046efc",
             "1eed3deb84ce89a9",
@@ -158,7 +148,8 @@
             "15d731f72f005f80",
             "abec785aac0fc4a4",
             "f8199787a7f7097e",
-            "d26231d9452173c8"
+            "d26231d9452173c8",
+            "022dfd5a7ca2552d"
         ],
         "x": 54,
         "y": 19,
@@ -2412,9 +2403,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-1-dnp3-master.connected",
+        "tag": "wtg-1.status",
         "updates": false,
-        "x": 210,
+        "x": 160,
         "y": 420,
         "wires": [
             [
@@ -2476,7 +2467,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-1 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-1 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-1 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-1 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-1 Down\"\n    return msg;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2537,9 +2528,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-3-dnp3-master.connected",
+        "tag": "wtg-3.status",
         "updates": false,
-        "x": 210,
+        "x": 160,
         "y": 560,
         "wires": [
             [
@@ -2601,7 +2592,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-3 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-3 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-3 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-3 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-3 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2662,9 +2653,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-5-dnp3-master.connected",
+        "tag": "wtg-5.status",
         "updates": false,
-        "x": 210,
+        "x": 160,
         "y": 700,
         "wires": [
             [
@@ -2726,7 +2717,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-5 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-5 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-5 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-5 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-5 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2787,9 +2778,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-2-dnp3-master.connected",
+        "tag": "wtg-2.status",
         "updates": false,
-        "x": 1010,
+        "x": 960,
         "y": 420,
         "wires": [
             [
@@ -2851,7 +2842,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-2 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-2 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-2 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-2 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-2 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2912,9 +2903,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-4-dnp3-master.connected",
+        "tag": "wtg-4.status",
         "updates": false,
-        "x": 1010,
+        "x": 960,
         "y": 560,
         "wires": [
             [
@@ -2947,7 +2938,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-4 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-4 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-4 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-4 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-4 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3037,9 +3028,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-6-dnp3-master.connected",
+        "tag": "wtg-6.status",
         "updates": false,
-        "x": 1010,
+        "x": 960,
         "y": 700,
         "wires": [
             [
@@ -3072,7 +3063,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-6 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-6 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-6 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-6 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-6 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3162,9 +3153,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-7-dnp3-master.connected",
+        "tag": "wtg-7.status",
         "updates": false,
-        "x": 210,
+        "x": 160,
         "y": 840,
         "wires": [
             [
@@ -3226,7 +3217,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-7 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-7 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-7 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-7 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-7 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3287,9 +3278,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-8-dnp3-master.connected",
+        "tag": "wtg-8.status",
         "updates": false,
-        "x": 1010,
+        "x": 960,
         "y": 840,
         "wires": [
             [
@@ -3322,7 +3313,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-8 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-8 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-8 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-8 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-8 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3412,9 +3403,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-9-dnp3-master.connected",
+        "tag": "wtg-9.status",
         "updates": false,
-        "x": 210,
+        "x": 160,
         "y": 980,
         "wires": [
             [
@@ -3476,7 +3467,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-9 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-9 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-9 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-9 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-9 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3537,9 +3528,9 @@
         "type": "ot-sim in",
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
-        "tag": "wtg-10-dnp3-master.connected",
+        "tag": "wtg-10.status",
         "updates": false,
-        "x": 1010,
+        "x": 950,
         "y": 980,
         "wires": [
             [
@@ -3572,7 +3563,7 @@
         "z": "1e4d1406de16ee4d",
         "g": "3ef915e5ea175076",
         "name": "button-color",
-        "func": "if(msg.payload==1){\n    msg.background=\"green\"\n    msg.label=\"WTG-10 Up\"\n    return msg;\n}else{\n    msg.background=\"red\"\n    msg.label=\"WTG-10 Down\"\n    return msg;}\n",
+        "func": "if (msg.payload == 2) {\n    msg.background = \"orange\";\n    msg.label = \"WTG-10 Stopped\";\n    return msg;\n} else if (msg.payload == 1) {\n    msg.background = \"green\"\n    msg.label = \"WTG-10 Up\"\n    return msg;\n} else {\n    msg.background = \"red\"\n    msg.label = \"WTG-10 Down\"\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8464,22 +8455,6 @@
         ]
     },
     {
-        "id": "8cccb5d6fbe65c42",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-1-turbine.emergency-stop",
-        "updates": false,
-        "x": 210,
-        "y": 1200,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
         "id": "de48480a53edb810",
         "type": "ot-sim out",
         "z": "1e4d1406de16ee4d",
@@ -8622,150 +8597,6 @@
         ]
     },
     {
-        "id": "622a1781bdd8384b",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-2-turbine.emergency-stop",
-        "updates": false,
-        "x": 510,
-        "y": 1200,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "a0dd6c9181a6d7a0",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-3-turbine.emergency-stop",
-        "updates": false,
-        "x": 210,
-        "y": 1280,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "0021c42050e6f9b5",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-4-turbine.emergency-stop",
-        "updates": false,
-        "x": 510,
-        "y": 1280,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "1026a06bdec53cff",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-5-turbine.emergency-stop",
-        "updates": false,
-        "x": 210,
-        "y": 1360,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "a7eaba7c926adaba",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-6-turbine.emergency-stop",
-        "updates": false,
-        "x": 510,
-        "y": 1360,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "63088f8694edcb42",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-7-turbine.emergency-stop",
-        "updates": false,
-        "x": 210,
-        "y": 1440,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "eac5c5af6853d749",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-8-turbine.emergency-stop",
-        "updates": false,
-        "x": 510,
-        "y": 1440,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "3e55c62242980d61",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-9-turbine.emergency-stop",
-        "updates": false,
-        "x": 210,
-        "y": 1520,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
-        "id": "c691389c194d7378",
-        "type": "ot-sim in",
-        "z": "1e4d1406de16ee4d",
-        "g": "3ef915e5ea175076",
-        "tag": "wtg-10-turbine.emergency-stop",
-        "updates": false,
-        "x": 510,
-        "y": 1520,
-        "wires": [
-            [
-                "dcf1bb257f418fd6",
-                "cd4b90b8fedb9a2d"
-            ]
-        ]
-    },
-    {
         "id": "bff7ef2bbb49fdec",
         "type": "ot-sim out",
         "z": "1e4d1406de16ee4d",
@@ -8854,5 +8685,21 @@
         "x": 1510,
         "y": 1520,
         "wires": []
+    },
+    {
+        "id": "022dfd5a7ca2552d",
+        "type": "ot-sim in",
+        "z": "1e4d1406de16ee4d",
+        "g": "3ef915e5ea175076",
+        "tag": "wind-farm-stopped",
+        "updates": false,
+        "x": 390,
+        "y": 1360,
+        "wires": [
+            [
+                "dcf1bb257f418fd6",
+                "cd4b90b8fedb9a2d"
+            ]
+        ]
     }
 ]
