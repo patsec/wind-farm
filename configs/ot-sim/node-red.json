@@ -45,7 +45,8 @@
             "3f3c1228a168b295",
             "27ad65d6c79c45cc",
             "78369ca698f9a3a8",
-            "46a86401caf5cc37"
+            "46a86401caf5cc37",
+            "7589929e26c17b3e"
         ],
         "x": 64,
         "y": 1819,
@@ -194,7 +195,8 @@
             "70e6cabf8519d31b",
             "e97baf4d05cf9514",
             "03907fbc4a2ee6fb",
-            "4b2d95d59c82c22e"
+            "4b2d95d59c82c22e",
+            "4ed43e212c84370c"
         ],
         "x": 904,
         "y": 1819,
@@ -239,7 +241,8 @@
             "94bdb2942be31b64",
             "52efdfdf435deb25",
             "e006fbea7b28f5d8",
-            "231d435f52d22084"
+            "231d435f52d22084",
+            "c5ff7e9ff663d89f"
         ],
         "x": 64,
         "y": 2659,
@@ -284,7 +287,8 @@
             "bb808a2834a745df",
             "4e1e8582bfd6f488",
             "c6debbb742f4fd99",
-            "5c9ff39733a7e199"
+            "5c9ff39733a7e199",
+            "d95e9cb2b1d2ad5c"
         ],
         "x": 904,
         "y": 2659,
@@ -329,7 +333,8 @@
             "bb108e7c63450180",
             "0f8d477ac6a4637b",
             "af38be78de27e861",
-            "84a5234439955fe2"
+            "84a5234439955fe2",
+            "1c3ef750646f743a"
         ],
         "x": 64,
         "y": 3499,
@@ -374,7 +379,8 @@
             "e75466feb1fa120a",
             "f8e73dc4419520e4",
             "3dc9a439356ed26b",
-            "7a8f9549ec697324"
+            "7a8f9549ec697324",
+            "7fc407ede28c6c08"
         ],
         "x": 904,
         "y": 3499,
@@ -419,7 +425,8 @@
             "c3b116842d9ba062",
             "4673b6ab1f7b58ba",
             "7ed30dfd961f0920",
-            "4c75782337d339c1"
+            "4c75782337d339c1",
+            "0dceebe7c3ee5008"
         ],
         "x": 64,
         "y": 4339,
@@ -464,7 +471,8 @@
             "48408b32c6e6f203",
             "37844e023aaa868c",
             "3c37776b748f9764",
-            "601e112b22c0d84d"
+            "601e112b22c0d84d",
+            "71b07109cbae9c31"
         ],
         "x": 904,
         "y": 4339,
@@ -509,7 +517,8 @@
             "b7fc9c62eb86425a",
             "4ddd5fc39add2d3c",
             "ce350ac85de01e27",
-            "e679871dfdf04549"
+            "e679871dfdf04549",
+            "2814a014c09414ac"
         ],
         "x": 64,
         "y": 5179,
@@ -554,7 +563,8 @@
             "c54387e5c39a278b",
             "c69d2eeaa24b91a0",
             "6b000c525723feb6",
-            "246e558944b5cc1a"
+            "246e558944b5cc1a",
+            "80b118d206ad91f8"
         ],
         "x": 904,
         "y": 5179,
@@ -2027,7 +2037,7 @@
         "y": 2280,
         "wires": [
             [
-                "e6d19971bcbd25c6"
+                "7589929e26c17b3e"
             ]
         ]
     },
@@ -4016,7 +4026,7 @@
         "y": 2280,
         "wires": [
             [
-                "6ba9187011e5f807"
+                "4ed43e212c84370c"
             ]
         ]
     },
@@ -4550,7 +4560,7 @@
         "y": 3120,
         "wires": [
             [
-                "e63f2e3f8815213b"
+                "c5ff7e9ff663d89f"
             ]
         ]
     },
@@ -5084,7 +5094,7 @@
         "y": 3120,
         "wires": [
             [
-                "60bf3753012d7dae"
+                "d95e9cb2b1d2ad5c"
             ]
         ]
     },
@@ -5618,7 +5628,7 @@
         "y": 3960,
         "wires": [
             [
-                "3030972578c7d522"
+                "1c3ef750646f743a"
             ]
         ]
     },
@@ -6152,7 +6162,7 @@
         "y": 3960,
         "wires": [
             [
-                "20791fcb1c253279"
+                "7fc407ede28c6c08"
             ]
         ]
     },
@@ -6686,7 +6696,7 @@
         "y": 4800,
         "wires": [
             [
-                "dbd74d96f657f12c"
+                "0dceebe7c3ee5008"
             ]
         ]
     },
@@ -7220,7 +7230,7 @@
         "y": 4800,
         "wires": [
             [
-                "01a1e4be240890ae"
+                "71b07109cbae9c31"
             ]
         ]
     },
@@ -7754,7 +7764,7 @@
         "y": 5640,
         "wires": [
             [
-                "6253c271956d2dc4"
+                "2814a014c09414ac"
             ]
         ]
     },
@@ -8288,7 +8298,7 @@
         "y": 5640,
         "wires": [
             [
-                "ab84f3cc8a189869"
+                "80b118d206ad91f8"
             ]
         ]
     },
@@ -8699,6 +8709,216 @@
             [
                 "dcf1bb257f418fd6",
                 "cd4b90b8fedb9a2d"
+            ]
+        ]
+    },
+    {
+        "id": "7589929e26c17b3e",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "6c7ae6ea8dbc2394",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 2320,
+        "wires": [
+            [
+                "e6d19971bcbd25c6"
+            ]
+        ]
+    },
+    {
+        "id": "c5ff7e9ff663d89f",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "203f375532e95a85",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 3160,
+        "wires": [
+            [
+                "e63f2e3f8815213b"
+            ]
+        ]
+    },
+    {
+        "id": "1c3ef750646f743a",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "c76fc9a7edf93fe8",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 4000,
+        "wires": [
+            [
+                "3030972578c7d522"
+            ]
+        ]
+    },
+    {
+        "id": "0dceebe7c3ee5008",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "db92cb1f066b66cd",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 4840,
+        "wires": [
+            [
+                "dbd74d96f657f12c"
+            ]
+        ]
+    },
+    {
+        "id": "2814a014c09414ac",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "474b16e329a051da",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 5680,
+        "wires": [
+            [
+                "6253c271956d2dc4"
+            ]
+        ]
+    },
+    {
+        "id": "4ed43e212c84370c",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "20349bb35f51008a",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 2320,
+        "wires": [
+            [
+                "6ba9187011e5f807"
+            ]
+        ]
+    },
+    {
+        "id": "d95e9cb2b1d2ad5c",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "62a1e7a24e9273b3",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 3160,
+        "wires": [
+            [
+                "60bf3753012d7dae"
+            ]
+        ]
+    },
+    {
+        "id": "7fc407ede28c6c08",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "6945dc86e240e5ed",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 4000,
+        "wires": [
+            [
+                "20791fcb1c253279"
+            ]
+        ]
+    },
+    {
+        "id": "71b07109cbae9c31",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "16bd1bbfd99f8833",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 4840,
+        "wires": [
+            [
+                "01a1e4be240890ae"
+            ]
+        ]
+    },
+    {
+        "id": "80b118d206ad91f8",
+        "type": "function",
+        "z": "1e4d1406de16ee4d",
+        "g": "9b15f9bac398cf98",
+        "name": "Convert integer",
+        "func": "if (Number(msg.payload) == 0) {\n    msg.payload = \"no\"\n} else {\n    msg.payload = \"yes\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 5680,
+        "wires": [
+            [
+                "ab84f3cc8a189869"
             ]
         ]
     }
