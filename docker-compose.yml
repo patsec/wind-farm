@@ -1,16 +1,40 @@
 services:
+  tailscale:
+    image: tailscale/tailscale
+    ports:
+    - 1880:1880
+    - 5601:5601
+    volumes:
+      - /dev/net/tun:/dev/net/tun # Required for tailscale to work
+    cap_add:                      # Required for tailscale to work
+      - net_admin
+      - sys_module
+    environment:
+      - TS_AUTHKEY=${OTSIM_TAILSCALE_AUTHKEY}
+      - TS_ACCEPT_DNS=true
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_HOSTNAME=${HOSTNAME}
+    restart: always
   hmi:
     image: ghcr.io/patsec/ot-sim/ot-sim:main
     init: true
-    cap_add:
-    - NET_ADMIN # for Tailscale
+    network_mode: service:tailscale
     volumes:
-    - /lib/modules:/lib/modules:ro # for Tailscale
-    - /dev/net/tun:/dev/net/tun    # for Tailscale
     - ./configs/ot-sim/hmi.xml:/etc/ot-sim/config.xml
     - ./configs/ot-sim/node-red.json:/etc/node-red.json
-    ports:
-    - 1880:1880
+  elasticsearch:
+    image: elasticsearch:8.16.1
+    init: true
+    network_mode: service:tailscale
+    volumes:
+    - ./configs/elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+  kibana:
+    image: kibana:8.16.1
+    init: true
+    depends_on:
+    - elasticsearch
+    network_mode: service:tailscale
+    volumes:
+    - ./configs/elasticsearch/kibana.yml:/usr/share/kibana/config/kibana.yml
     environment:
-    - OTSIM_TAILSCALE_AUTHKEY=${OTSIM_TAILSCALE_AUTHKEY} # for Tailscale
-    hostname: ${HOSTNAME} # for Tailscale
+    - INTERACTIVESETUP_ENABLED=false
