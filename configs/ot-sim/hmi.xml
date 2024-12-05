@@ -488,7 +488,7 @@
   </dnp3>
   <!-- WTG 6 -->
   <dnp3 name="wtg-6-dnp3-master" mode="client">
-    <endpoint>wgt-6:20000</endpoint>
+    <endpoint>wtg-6:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -559,7 +559,7 @@
   </dnp3>
   <!-- WTG 7 -->
   <dnp3 name="wtg-7-dnp3-master" mode="client">
-    <endpoint>wgt-7:20000</endpoint>
+    <endpoint>wtg-7:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -630,7 +630,7 @@
   </dnp3>
   <!-- WTG 8 -->
   <dnp3 name="wtg-8-dnp3-master" mode="client">
-    <endpoint>wgt-8:20000</endpoint>
+    <endpoint>wtg-8:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -701,7 +701,7 @@
   </dnp3>
   <!-- WTG 9 -->
   <dnp3 name="wtg-9-dnp3-master" mode="client">
-    <endpoint>wgt-9:20000</endpoint>
+    <endpoint>wtg-9:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
@@ -772,7 +772,7 @@
   </dnp3>
   <!-- WTG 10 -->
   <dnp3 name="wtg-10-dnp3-master" mode="client">
-    <endpoint>wgt-10:20000</endpoint>
+    <endpoint>wtg-10:20000</endpoint>
     <master name="dnp3-master">
       <local-address>1</local-address>
       <remote-address>1024</remote-address>
